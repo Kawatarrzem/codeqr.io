@@ -1,52 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="qr.css">
-    <link rel="icon" href="favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <title>Frontend Mentor | QR code component</title>
+# Frontend Mentor — Composant carte QR code
 
-<style>
-        .attribution {
-          font-size: 15px;
-          text-align: center;
-          position: fixed;
-          bottom: 0;
-          left: 50%;
-          transform: translate(-50%, -10%);
-        }
-    
-        .attribution a {
-          color: hsl(218, 44%, 22%);
-          text-decoration: none;
-        }
-        </style>
-        </head>
-<body>
-    <div class="container">
-        <div class="card">
-                <img src="image-qr-code.png" alt="">
-            
-            <div class="disc">
-                <p class="p1">Improve your front-end skills by building projects</p>
-                <p class="p2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-                
-            </div>
+Solution du défi [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) proposé par [Frontend Mentor](https://www.frontendmentor.io?ref=challenge). La page affiche une carte centrée contenant un code QR, un titre et un court texte d'accroche.
 
-            </div>
+## Aperçu
 
-    
-            <div class="attribution">
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                Coded by <a href="https://github.com/Kawatarrzem">Kaouther Zemouli</a>.
-              </div>
+![Aperçu du projet](./screenshot.png)
 
+- Solution : [Lien vers le dépôt](https://github.com/Kawatarrzem)
+- Démo en ligne : _à ajouter_
 
+## Technologies
 
-    </div>
-</body>
-</html>
+Le projet est réalisé en HTML5 et CSS3 uniquement, sans framework ni JavaScript. La mise en page repose sur Flexbox pour centrer la carte horizontalement et verticalement, et la police Outfit est chargée depuis Google Fonts.
+
+## Structure du projet
+
+```
+.
+├── index.html
+├── qr.css
+├── image-qr-code.png
+├── favicon-32x32.png
+├── screenshot.png
+└── README.md
+```
+
+## Spécifications de style
+
+| Élément | Valeur |
+|---|---|
+| Fond de page | `hsl(212, 45%, 89%)` |
+| Titre | `hsl(218, 44%, 22%)`, 20px, graisse 700 |
+| Texte | `hsl(220, 15%, 55%)`, 15px |
+| Police | Outfit (400, 700) |
+| Carte | 285px de large, `border-radius: 25px` |
+
+## Installation
+
+```bash
+git clone https://github.com/Kawatarrzem/<nom-du-depot>.git
+cd <nom-du-depot>
+```
+
+Il suffit ensuite d'ouvrir `index.html` dans un navigateur.
+
+## Ce que j'ai appris
+
+Ce projet m'a permis de consolider le centrage avec Flexbox (`align-items`, `justify-content`), la gestion des ombres et des arrondis avec `box-shadow` et `border-radius`, ainsi que l'usage des couleurs HSL pour respecter fidèlement une maquette.
+
+## Pistes d'amélioration
+
+Rendre la carte pleinement responsive (largeur en `max-width` plutôt qu'en valeur fixe, hauteur automatique à la place de `440px`), et remplacer `height: 100vh` par `min-height: 100vh` afin d'éviter tout débordement sur petits écrans.
+
+## Auteure
+
+**Kaouther Zemouli** — [GitHub](https://github.com/Kawatarrzem)
+
+Défi proposé par [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).
